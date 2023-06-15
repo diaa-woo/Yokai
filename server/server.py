@@ -2,7 +2,7 @@ import flask
 from flask import request               # GET, POST 메소드 - 파라미터의 값 받음
 from flask import Response              # 페이지 데이터 및 콘텐츠 출력 쌔 사용. html, text 등 다양한 웹 콘텐츠 출력 가능
 from flask import stream_with_context   # url 호출 시, 접속이 timeout 되는 것과 관계 없이 호출한 내용을 유지시켜 지속적으로 데이터 전송
-from Server.streamer import Streamer
+from server.streamer import Streamer
 
 app = flask.Flask(__name__)     # flask 서버 호출, __name__ : 현재 패키지 경로 인식
 

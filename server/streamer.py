@@ -19,7 +19,7 @@ class Streamer:
             cv2.ocl.setUseOpenCL(True)
             print('[Yokai] ', 'OpenCL Active')
         else :
-            print('[Yokai] ', 'OpenCL Active')
+            print('[Yokai] ', 'OpenCL Deactive')
         
         # Init Variable
         self.capture = None
@@ -98,6 +98,7 @@ class Streamer:
     def fps(self):
         self.current_time = time.time()
         self.sec = self.current_time - self.preview_time
+        
         self.preview_time = self.current_time
         
         if self.sec > 0:

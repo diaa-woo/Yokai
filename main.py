@@ -1,4 +1,4 @@
-from Server.server import app
+from server.server import app
 
 version = '0.1.0'
 
