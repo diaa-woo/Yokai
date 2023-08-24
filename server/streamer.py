@@ -62,6 +62,7 @@ class Streamer:
         while True:
             if self.started :
                 (grabbed, frame) = self.capture.read()
+                frame = cv2.flip(frame, 1)
                 
                 if grabbed :
                     self.Q.put(frame)
